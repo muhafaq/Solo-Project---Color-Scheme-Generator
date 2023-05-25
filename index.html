@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+        <!-- CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <!-- Linking CSS -->
+        <link rel="stylesheet" href="index.css">
+        <title> Color Scheme Generator </title>
+    </head>
+
+    <body>
+        <div class="container"> 
+
+            <header>
+                <div class='header-container'>
+                    <img src="paint-bucket.svg" alt="Logo" class="logo">
+                    <h1> Color Scheme Generator</h1>
+                </div>
+            </header>
+
+            <section>
+                <div class="color-selection-container"> 
+                    <input type="color", id="choose-color", class="choose-color"> 
+                    <select id="color-mode" class="color-mode"> 
+                        <option value="monochrome" > Monochrome </option>
+                        <option value="monochrome-dark" > Monochrome-dark </option>
+                        <option value="monochrome-light" > Monochrome-light </option>
+                        <option value="analogic" > Analogic </option>
+                        <option value="complement" > Complement </option>
+                        <option value="analogic-complement" > Analogic-complement</option>
+                        <option value="triad" > Triad </option>
+                        <option value="quad"> Quad </option>
+                    </select>
+                    
+                    <!-- <input type="number", id="quantity" min="1" max="5"> -->
+                    <button class="get-color-btn" id="get-color-btn"> Get color scheme </button>
+                </div>
+            </section>
+
+            <section>
+                <div id="color-scheme-container" class="color-scheme-container">
+                    <!-- Generated schemes will be shown here -->
+                </div>
+            </section>
+                
+        </div> 
+
+        <script src="index.js"></script>    
+    </body>
+</html>
